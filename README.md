@@ -165,7 +165,7 @@ sudo snap install code --classic && \
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || \
   sudo apt-get install ripgrep && \
   sudo snap install flutter --classic && \
-  sudo snap install kubectl && \
+  sudo snap install kubectl --classic && \
   sudo apt install deluge && \
   sudo apt install zsh && \
   curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && \
