@@ -106,7 +106,7 @@ sudo apt install zsh
 THIS IS TRICKY, IT WILL INSTALL, BUT YOU GOTTA DO ADDITIONAL CONFIG
 
 ```sh
-sudo apt install docker
+sudo apt -y install docker.io
 ```
 
 ## DELUGE
@@ -118,7 +118,7 @@ sudo apt install deluge
 ## KUBECTL
 
 ```sh
-sudo snap install kubectl
+sudo snap install kubectl --classic
 ```
 
 ## JDK
@@ -163,25 +163,26 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 ```sh
 sudo snap install code --classic && \
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || \
-  sudo apt-get install ripgrep && \
+  sudo apt-get install ripgrep || \
   sudo snap install flutter --classic && \
   sudo snap install kubectl --classic && \
-  sudo apt install deluge && \
-  sudo apt install zsh && \
+  sudo apt -y install docker.io && \
+  sudo apt -y install deluge && \
+  sudo apt -y install zsh && \
   curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && \
   sudo install minikube-linux-amd64 /usr/local/bin/minikube && \
   sudo apt-get install openjdk-11-jdk && \
   sudo snap install insomnia && \
   sudo snap install discord && \
   sudo snap install dbeaver-ce && \
-  sudo apt install git && \
+  sudo apt -y install git && \
   sudo snap install spotify && \
-  sudo apt install python3.9 && \
+  sudo apt -y install python3 && \
   sudo snap install zoom-client && \
   sudo snap install vlc && \
   sudo snap install intellij-idea-ultimate --classic && \
   sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' && \
   wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && \
   sudo apt-get update && \
-  sudo apt-get install google-chrome-stable
+  sudo apt-get -y install google-chrome-stable
 ```
