@@ -185,5 +185,5 @@ sudo snap install code --classic && \
   wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && \
   sudo apt-get update && \
   sudo apt-get -y install google-chrome-stable && \
-  sudo snap install androidsdk
+  sudo snap install android-studio --classic
 ```
