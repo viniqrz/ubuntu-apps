@@ -162,6 +162,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 
 ```sh
 sudo snap install code --classic && \
+  sudo apt install curl && \
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || \
   sudo apt-get install ripgrep || \
   sudo snap install flutter --classic && \
