@@ -188,5 +188,6 @@ sudo snap install code --classic && \
   sudo apt-get -y install google-chrome-stable && \
   sudo snap install android-studio --classic && \
   sudo snap install terraform --classic && \
-  sudo snap install aws-cli --classic
+  sudo snap install aws-cli --classic && \
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
