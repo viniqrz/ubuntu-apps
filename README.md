@@ -199,17 +199,21 @@ sudo snap install code --classic && \
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || \
   sudo apt -y install docker.io && \
   sudo apt -y install deluge && \
-  sudo snap install discord && \
-  sudo snap install dbeaver-ce && \
   sudo apt -y install git && \
   git config --global user.email "viniderp@gmail.com" && \
-  git config --global user.name "vini" \
-  sudo snap install spotify && \
-  sudo snap install zoom-client && \
+  git config --global user.name "vini" && \
   sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' && \
   wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && \
   sudo apt-get update && \
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
+
+## SNAP
+```sh
+  sudo snap install discord && \
+  sudo snap install dbeaver-ce && \
+  sudo snap install spotify && \
+  sudo snap install zoom-client && \
 ```
 
 # SSH
