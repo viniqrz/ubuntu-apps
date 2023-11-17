@@ -213,7 +213,7 @@ sudo snap install code --classic && \
   sudo snap install discord && \
   sudo snap install dbeaver-ce && \
   sudo snap install spotify && \
-  sudo snap install zoom-client && \
+  sudo snap install zoom-client
 ```
 
 # SSH
