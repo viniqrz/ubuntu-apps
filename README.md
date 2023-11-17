@@ -212,3 +212,11 @@ sudo snap install code --classic && \
   sudo apt-get update && \
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
+
+# SSH
+```sh
+  chmod 600 ~/.ssh/id_ed25519 && \
+  ssh-add ~/.ssh/id_ed25519 && \
+  chmod 600 ~/.ssh/id_rsa && \
+  ssh-add ~/.ssh/id_rsa
+```
