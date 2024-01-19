@@ -223,3 +223,10 @@ sudo snap install code --classic && \
   chmod 600 ~/.ssh/id_rsa && \
   ssh-add ~/.ssh/id_rsa
 ```
+
+# AWS
+```sh
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+unzip awscliv2.zip && \
+sudo ./aws/install
+```
