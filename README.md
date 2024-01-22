@@ -230,3 +230,17 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip && \
 sudo ./aws/install
 ```
+
+# COMPOSE PLUGIN
+```sh
+DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker} && \
+mkdir -p $DOCKER_CONFIG/cli-plugins && \
+curl -SL https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose && \
+chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+```
+### PERMISSIONS
+```sh
+sudo groupadd docker && \
+sudo usermod -aG docker $USER && \
+newgrp docker
+```
