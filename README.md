@@ -199,7 +199,7 @@ sudo snap install code --classic && \
   git config --global user.email "viniderp@gmail.com" && \
   git config --global user.name "vini" && \
   sudo apt -y install zsh && \
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || \
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
   sudo apt -y install docker.io && \
   sudo apt -y install docker-compose && \
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
