@@ -240,3 +240,18 @@ sudo groupadd docker && \
 sudo usermod -aG docker $USER && \
 newgrp docker
 ```
+
+# 2026
+```sh
+  sudo apt install curl && \
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || \
+  sudo apt -y install zsh && \
+  sudo apt-get install openjdk-11-jdk && \
+  sudo snap install dbeaver-ce && \
+  sudo apt -y install git && \
+  sudo snap install code --classic && \
+  sudo snap install zoom-client && \
+  sudo snap install aws-cli --classic && \
+  sudo snap install discord && \
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
