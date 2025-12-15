@@ -252,6 +252,7 @@ newgrp docker
   sudo snap install code --classic && \
   sudo snap install zoom-client && \
   sudo snap install aws-cli --classic && \
+  sudo apt -y install docker.io && \
   sudo snap install discord && \
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
